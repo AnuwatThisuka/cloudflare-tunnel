@@ -1,0 +1,7 @@
+tunnel: mytunnel
+credentials-file: /home/nonroot/.cloudflared/credentials.json
+
+ingress:
+  - hostname: rpi.example.com
+    service: http://host.docker.internal:3000
+  - service: http_status:404
